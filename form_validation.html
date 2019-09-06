@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--autocomplete 이전에 입력했던 정보 기억 on/off-->
+    <form action="login.php" autocomplete="on" method="post">
+      <!--requied 반드시 입력--><!--pattern 원하는 입력방식을 강요-->
+      <!--정규표현식 [a-zA-Z] 소대문자 // . 모든 한 글자 // + 이상 //.+ 어떠한 문자 하나 이상 // [0-9] 숫자-->
+      <input type="text" name="id" placeholder="아이디를 입력해주세요." autofocus required pattern="[a-zA-Z].+[0-9]">
+      <input type="password" name="pwd" placeholder="비밀번호를 입력해주세요." autocomplete="off">
+      <input type="submit">
+    </form>
+  </body>
+</html>
